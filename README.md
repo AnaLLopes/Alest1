@@ -1,7 +1,7 @@
-# Alest1
-1. Acrescentando métodos na implementação de Lista Duplamente Encadeada
+# Trabalho T1 | Estruturas Lineares e Complexidade de Algoritmos
+## 1. Acrescentando métodos na implementação de Lista Duplamente Encadeada
 
-a) Na classe DoubleLinkedListOfInteger acrescente o método abaixo seguindo as instruções dos comentários javadoc:
+### a) Na classe DoubleLinkedListOfInteger acrescente o método abaixo seguindo as instruções dos comentários javadoc:
 
     /**
      * Método que conta o número de ocorrências do elemento passado como parâmetro na lista, retornando este valor
@@ -10,7 +10,7 @@ a) Na classe DoubleLinkedListOfInteger acrescente o método abaixo seguindo as i
      */
      int countOccurrences(Integer element)
 
-b) Na classe DoubleLinkedListOfInteger acrescente o método abaixo seguindo as instruções dos comentários javadoc:
+### b) Na classe DoubleLinkedListOfInteger acrescente o método abaixo seguindo as instruções dos comentários javadoc:
 
     /**
      * Método que percorre a lista removendo todos os elementos pares.
@@ -21,9 +21,9 @@ b) Na classe DoubleLinkedListOfInteger acrescente o método abaixo seguindo as i
      boolean removeEvenNumbers( ... )
 
 
-2. Implementação de Pilhas
+## 2. Implementação de Pilhas
 
-a) Apresente os métodos definidos a seguir para uma classe StackOfInterger que lida com números inteiros em um estrutura de pilha, considerando que os elementos da pilha devem ser armazenados em uma DoubleLinkedListOfInteger. Crie uma classe App e inclua nela o método main. Dentro deste método main instancie a pilha implementada, inclua elementos e use o restante dos métodos implementados.
+### a) Apresente os métodos definidos a seguir para uma classe StackOfInterger que lida com números inteiros em um estrutura de pilha, considerando que os elementos da pilha devem ser armazenados em uma DoubleLinkedListOfInteger. Crie uma classe App e inclua nela o método main. Dentro deste método main instancie a pilha implementada, inclua elementos e use o restante dos métodos implementados.
 
      void pop()
      int push(Integer element)
@@ -32,7 +32,7 @@ a) Apresente os métodos definidos a seguir para uma classe StackOfInterger que 
      boolean isEmpty()
      void clear()
 
-b) Construa o método estático abaixo seguindo as instruções dos comentários javadoc. Este método recebe um arranjo de inteiros por parâmetro e utiliza uma instância da pilha implementada para inverter o seu conteúdo. Chame este método main da classe App para testar o seu funcionamento. 
+### b) Construa o método estático abaixo seguindo as instruções dos comentários javadoc. Este método recebe um arranjo de inteiros por parâmetro e utiliza uma instância da pilha implementada para inverter o seu conteúdo. Chame este método main da classe App para testar o seu funcionamento. 
 
     /**
      * Método reverseArrayUsingStack()
@@ -43,8 +43,9 @@ b) Construa o método estático abaixo seguindo as instruções dos comentários
      boolean reverseArrayUsingStack( ... )
 
 
-3. Implementação de Filas
-a) Apresente os métodos definidos a seguir para uma classe QueueOfInterger que lida com números inteiros em um estrutura de fila, considerando que os elementos da fila devem ser armazenados em uma DoubleLinkedListOfInteger. Crie uma classe App e inclua nela o método main. Dentro deste método main instancie a fila implementada, inclua elementos e use o restante dos métodos implementados.
+## 3. Implementação de Filas
+
+### a) Apresente os métodos definidos a seguir para uma classe QueueOfInterger que lida com números inteiros em um estrutura de fila, considerando que os elementos da fila devem ser armazenados em uma DoubleLinkedListOfInteger. Crie uma classe App e inclua nela o método main. Dentro deste método main instancie a fila implementada, inclua elementos e use o restante dos métodos implementados.
 
      void enqueue(Integer element)
      int dequeue()
@@ -52,7 +53,8 @@ a) Apresente os métodos definidos a seguir para uma classe QueueOfInterger que 
      int size()
      boolean isEmpty()
      void clear()
-b) Implemente um método que transforma que usa a lógica de fila de prioridades, onde um elemento inserido na fila deve ser posicionado de acordo com o seu valor. A ordem deve ser 
+
+### b) Implemente um método que transforma que usa a lógica de fila de prioridades, onde um elemento inserido na fila deve ser posicionado de acordo com o seu valor. A ordem deve ser 
 
     /**
      * Método enqueuePriority()
@@ -61,6 +63,6 @@ b) Implemente um método que transforma que usa a lógica de fila de prioridades
      */
      void enqueuePriority(Integer element)
 
-4) Complexidade de algoritmos
+## 4. Complexidade de algoritmos
 
-a) Construa um documento que apresenta a complexidade de tempo de pior caso (Notação O) para cada método construído com a justifique do porquê da classe de complexidade indicada e qual o raciocínio usado para chegar neste resultado.
+### a) Construa um documento que apresenta a complexidade de tempo de pior caso (Notação O) para cada método construído com a justifique do porquê da classe de complexidade indicada e qual o raciocínio usado para chegar neste resultado.
