@@ -1,7 +1,10 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        Scanner scanner = new java.util.Scanner(System.in);
+
         DoubleLinkedListOfInteger dlist = new DoubleLinkedListOfInteger();
         dlist.add(1);
         dlist.add(2);
@@ -27,7 +30,6 @@ public class App {
             System.out.println("4. Inverter um arranjo de inteiros");
             System.out.println("5. Sair");
 
-            java.util.Scanner scanner = new java.util.Scanner(System.in);
             int option = scanner.nextInt();
 
             System.out.println("");
@@ -35,6 +37,7 @@ public class App {
                 case 1:
                     System.out.print("Digite um número para contar as ocorrências: ");
                     int number = scanner.nextInt();
+                    System.out.println("Lista Duplamente Encadeada: " + dlist);
                     System.out.println("Número de ocorrências de " + number + ": " + dlist.countOccurrences(number));
                     break;
 
