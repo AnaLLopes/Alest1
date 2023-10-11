@@ -8,7 +8,7 @@ class QueueOfInteger {
     }
 
     public void enqueue(Integer element) {
-        list.addToEnd(element);
+        list.add(element);
     }
 
     public Integer dequeue() {
