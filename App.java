@@ -90,7 +90,8 @@ public class App {
         queue.enqueue(3);
         queue.enqueue(1);
 
-        while (true) {
+        int escolha;
+        do {
             System.out.println("Escolha uma opção:");
             System.out.println("1. Enqueue (Adicionar elemento à fila)");
             System.out.println("2. Dequeue (Remover e retornar elemento da fila)");
@@ -101,7 +102,7 @@ public class App {
             System.out.println("7. Enfileirar com prioridade");
             System.out.println("8. Sair");
 
-            int escolha = scanner.nextInt();
+            escolha = scanner.nextInt();
 
             switch (escolha) {
                 case 1:
@@ -149,13 +150,11 @@ public class App {
 
                 case 8:
                     System.out.println("Encerrando o programa.");
-                    scanner.close();
-                    System.exit(0);
                     break;
 
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-        }
+        } while (escolha != 8);
     }
 }
