@@ -312,7 +312,6 @@ public class DoubleLinkedListOfInteger {
         int occurences = 0;
 
         while (aux != null) {
-            System.out.println(aux.element);
             if (aux.element == element) occurences++;
             aux = aux.next;
         }
@@ -331,7 +330,6 @@ public class DoubleLinkedListOfInteger {
         boolean removed = false;
 
         for (int i=0; i < size;i++) {
-            System.out.println(aux.element);
             if (aux.element%2 == 0) {
                 aux.prev.next = aux.next;
                 aux.next.prev = aux.prev;

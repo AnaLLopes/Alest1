@@ -40,7 +40,7 @@ public class App {
 
                 case 2:
                     if(dlist.removeEvenNumbers(dlist.size()))
-                    System.out.println("Números pares removidos - " + dlist);
+                    System.out.println("Números pares removidos: " + dlist);
                     else
                     System.out.println("Números pares não removidos" );
                     break;
