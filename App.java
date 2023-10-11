@@ -21,7 +21,8 @@ public class App {
         StackOfInteger stack = new StackOfInteger();
         int[] originalArray = {1, 2, 3, 4, 5};
 
-        while (true) {
+        int option;
+        do {
             System.out.println("");
             System.out.println("Escolha uma opcao:");
             System.out.println("1. Contar ocorrências de um número na lista");
@@ -30,7 +31,7 @@ public class App {
             System.out.println("4. Inverter um arranjo de inteiros");
             System.out.println("5. Sair");
 
-            int option = scanner.nextInt();
+            option = scanner.nextInt();
 
             System.out.println("");
             switch (option) {
@@ -74,14 +75,12 @@ public class App {
 
                 case 5:
                     System.out.println("Saindo do programa.");
-                    System.exit(0);
                     break;
 
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
-                    break;
             }
-        }
+        } while (option != 5);
 
         QueueOfInteger queue = new QueueOfInteger();
         
