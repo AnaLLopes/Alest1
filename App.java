@@ -82,5 +82,81 @@ public class App {
                     break;
             }
         }
+
+        QueueOfInteger queue = new QueueOfInteger();
+        
+        queue.enqueue(2);
+        queue.enqueue(4);
+        queue.enqueue(5);
+        queue.enqueue(3);
+        queue.enqueue(1);
+
+        while (true) {
+            System.out.println("Escolha uma opção:");
+            System.out.println("1. Enqueue (Adicionar elemento à fila)");
+            System.out.println("2. Dequeue (Remover e retornar elemento da fila)");
+            System.out.println("3. Head (Obter elemento da frente da fila)");
+            System.out.println("4. Tamanho da fila");
+            System.out.println("5. Fila está vazia?");
+            System.out.println("6. Limpar fila");
+            System.out.println("7. Enfileirar com prioridade");
+            System.out.println("8. Sair");
+
+            int escolha = scanner.nextInt();
+
+            switch (escolha) {
+                case 1:
+                    System.out.print("Informe o elemento a ser enfileirado: ");
+                    int element = scanner.nextInt();
+                    queue.enqueue(element);
+                    break;
+
+                case 2:
+                    Integer dequeued = queue.dequeue();
+                    if (dequeued != null) {
+                        System.out.println("Elemento desenfileirado: " + dequeued);
+                    } else {
+                        System.out.println("A fila está vazia.");
+                    }
+                    break;
+
+                case 3:
+                    Integer front = queue.head();
+                    if (front != null) {
+                        System.out.println("Elemento da frente da fila: " + front);
+                    } else {
+                        System.out.println("A fila está vazia.");
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("Tamanho da fila: " + queue.size());
+                    break;
+
+                case 5:
+                    System.out.println("A fila está vazia? " + queue.isEmpty());
+                    break;
+
+                case 6:
+                    queue.clear();
+                    System.out.println("Fila limpa.");
+                    break;
+
+                case 7:
+                    System.out.print("Informe o elemento a ser enfileirado com prioridade: ");
+                    int priorityElement = scanner.nextInt();
+                    queue.enqueuePriority(priorityElement);
+                    break;
+
+                case 8:
+                    System.out.println("Encerrando o programa.");
+                    scanner.close();
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+            }
+        }
     }
 }
